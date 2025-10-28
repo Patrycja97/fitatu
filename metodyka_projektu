@@ -1,0 +1,17 @@
+Rozwinięcie/usprawnienie aplikacji Fitatu - Metodyka prowadzenia projektu 
+
+Ponieważ projekt jest innowacyjny, będzie wymagać testowania, interakcji z partnerami zewnętrznymi i iteracyjnego rozwoju, myślę że najlepiej będzie zastosować metodykę zwinną – SCRUM. 
+
+Projekt jest innowacyjny i eksperymentalny 
+- Integracja Fitatu z aplikacjami zakupowymi (Glovo, Lisek itd.) to pomysł, którego efekt trudno przewidzieć z góry;
+- SCRUM pozwoli testować pomysły iteracyjnie, w sprintach;
+
+Zespół projektowy będzie międzydziałowy 
+- Będą tu osoby z IT, UX/UI, marketingu i partnerzy zewnętrzni (np. przedstawiciele Glovo);
+- SCRUM wesprze komunikację między różnymi zespołami;
+
+Zmiany w trakcie projektu są bardzo prawdopodobne 
+- API partnerów mogą się różnić, więc konieczne będą dostosowania;
+
+Będzie można łatwiej mierzyć postępy 
+- Każdy sprint będzie się kończyć konkretnym przyrostem produktu (np. gotową funkcją integracji z jedną aplikacją), co da wymierne efekty w ściśle określonym czasie;
