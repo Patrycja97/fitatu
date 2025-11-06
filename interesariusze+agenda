@@ -1,15 +1,15 @@
 ✅ Identyfikacja interesariuszy
 
-| Interesariusz / rola                                                         | Zakres odpowiedzialności                                                             | Potrzeby / oczekiwania                                |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------- |
-| **Product Owner**                                                            | Podejmowanie decyzji o funkcjonalności, priorytetyzacja backlogu                     | Jasna wartość biznesowa, zgodność z wizją produktu    |
-| **Analityk Biznesowy **                                                      | Analiza potrzeb, zbieranie wymagań, komunikacja z interesariuszami                   | Zrozumienie procesu, dostęp do danych i API partnerów |
-| **Zespół developerski**                                                      | Implementacja integracji z API aplikacji zakupowych                                  | Klarowne wymagania, stabilne API partnerów            |
-| **UX/UI designer**                                                           | Zaprojektowanie interfejsu (wybór aplikacji zakupowej, potwierdzenia, powiadomienia) | Informacje o user stories, scenariusze wydarzeń       |
-| **Partnerzy zewnętrzni (Glovo / Lisek / Uber Eats / InPost Fresh)**          | Udostępnienie API, konsultacje techniczne z ich developerami                         | Potencjalne korzyści biznesowe, bezpieczeństwo danych |
-| **Użytkownicy aplikacji Fitatu**                                             | Korzystanie z funkcji automatyzacji zakupów                                          | Prosta obsługa, oszczędność czasu                     |
-| **Marketing / PR**                                                           | Komunikacja z partnerami, promocja funkcji                                           | Wartość marketingowa, przewaga konkurencyjna          |
-| **Zespół Legal**                                                             | Weryfikacja zgodności integracji z regulacjami                                       | Bezpieczeństwo danych                                 |
+| Interesariusz / rola                                                | Zakres odpowiedzialności                                                             | Potrzeby / oczekiwania                                |
+| --------------------------------------------------------------------| ------------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| **Product Owner**                                                   | Podejmowanie decyzji o funkcjonalności, priorytetyzacja backlogu                     | Jasna wartość biznesowa, zgodność z wizją produktu    |
+| **Analityk Biznesowy **                                             | Analiza potrzeb, zbieranie wymagań, komunikacja z interesariuszami                   | Zrozumienie procesu, dostęp do danych i API partnerów |
+| **Zespół developerski**                                             | Implementacja integracji z API aplikacji zakupowych                                  | Klarowne wymagania, stabilne API partnerów            |
+| **UX/UI designer**                                                  | Zaprojektowanie interfejsu (wybór aplikacji zakupowej, potwierdzenia, powiadomienia) | Informacje o user stories, scenariusze wydarzeń       |
+| **Partnerzy zewnętrzni (Glovo / Lisek / Uber Eats / InPost Fresh)** | Udostępnienie API, konsultacje techniczne z ich developerami                         | Potencjalne korzyści biznesowe, bezpieczeństwo danych |
+| **Użytkownicy aplikacji Fitatu**                                    | Korzystanie z funkcji automatyzacji zakupów                                          | Prosta obsługa, oszczędność czasu                     |
+| **Marketing / PR**                                                  | Komunikacja z partnerami, promocja funkcji                                           | Wartość marketingowa, przewaga konkurencyjna          |
+| **Zespół Legal**                                                    | Weryfikacja zgodności integracji z regulacjami                                       | Bezpieczeństwo danych                                 |
 
 
 ✅ Propozycja agendy spotkania (60 min)
