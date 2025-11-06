@@ -1,0 +1,25 @@
+✅ Identyfikacja interesariuszy
+
+| Interesariusz / rola                                                         | Zakres odpowiedzialności                                                             | Potrzeby / oczekiwania                                |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| **Product Owner**                                                            | Podejmowanie decyzji o funkcjonalności, priorytetyzacja backlogu                     | Jasna wartość biznesowa, zgodność z wizją produktu    |
+| **Analityk Biznesowy **                                                      | Analiza potrzeb, zbieranie wymagań, komunikacja z interesariuszami                   | Zrozumienie procesu, dostęp do danych i API partnerów |
+| **Zespół developerski**                                                      | Implementacja integracji z API aplikacji zakupowych                                  | Klarowne wymagania, stabilne API partnerów            |
+| **UX/UI designer**                                                           | Zaprojektowanie interfejsu (wybór aplikacji zakupowej, potwierdzenia, powiadomienia) | Informacje o user stories, scenariusze wydarzeń       |
+| **Partnerzy zewnętrzni (Glovo / Lisek / Uber Eats / InPost Fresh)**          | Udostępnienie API, konsultacje techniczne z ich developerami                         | Potencjalne korzyści biznesowe, bezpieczeństwo danych |
+| **Użytkownicy aplikacji Fitatu**                                             | Korzystanie z funkcji automatyzacji zakupów                                          | Prosta obsługa, oszczędność czasu                     |
+| **Marketing / PR**                                                           | Komunikacja z partnerami, promocja funkcji                                           | Wartość marketingowa, przewaga konkurencyjna          |
+| **Zespół Legal**                                                             | Weryfikacja zgodności integracji z regulacjami                                       | Bezpieczeństwo danych                                 |
+
+
+✅ Propozycja agendy spotkania (60 min)
+
+| Czas          | Punkty agendy                                                                                  | Cele                                        |
+| ------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| **0–5 min**   | Powitanie i przedstawienie uczestników                                                         | Zapoznanie zespołu                          |
+| **5–10 min**  | Krótkie omówienie projektu (pomysł → rozwiązanie → korzyści)                                   | Wprowadzenie wszystkich w kontekst          |
+| **10–20 min** | Prezentacja pomysłu: Integracja „lista zakupów → koszyk w aplikacji zakupowej” + powiadomienia | Zrozumienie funkcjonalności                 |
+| **20–30 min** | Dyskusja nad wartością biznesową (dla Fitatu i partnerów)                                      | Potwierdzenie, że projekt ma sens biznesowy |
+| **30–40 min** | Identifikacja interesariuszy, potrzeb i ryzyk (np. różne API partnerów)                        | Uzgodnienie zakresu                         |
+| **40–50 min** | Propozycja metodyki pracy (SCRUM, sprinty, backlog funkcjonalności)                            | Ustalenie sposobu działania                 |
+| **50–60 min** | Ustalenie kolejnych kroków + podsumowanie                                                      | Konkretne zadania przed kolejnym spotkaniem |
