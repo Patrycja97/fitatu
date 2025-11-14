@@ -1,0 +1,72 @@
+✅ Myślę że do mojego projektu najlepiej będzie pasować metoda CATWOE, gdyż:
+- Pomoże w zrozumieniu sytuacji z różnych perspektyw każdego z interesariuszy (a mój projekt ma ich sporo);
+- Pozwoli zebrać pierwsze wymagania w sposób uporządkowany;
+
+✅ Symulacja pierwszej sesji facylitowanej CATWOE
+
+Zakładam, że sesja trwa ok. 60 min, bierze w niej udział:
+Product Owner Fitatu, 1 UX/UI designer, 1 developer, przedstawiciel partnera (np. Lisek) oraz ja jako analityk i facylitator.
+
+CATWOE – wyniki sesji 
+
+C – Customers
+
+** Kto korzysta na zmianie? **
+
+Użytkownicy Fitatu, którzy prowadzą dietę i planują posiłki.
+Osoby zapracowane, chcące szybko zamawiać zakupy.
+Fitatu jako marka (większe zaangażowanie użytkowników).
+Partnerzy zakupowi (większe koszyki, częstsze zakupy).
+
+------------------------------------------------------------------------------
+
+A – Actors
+
+** Kto realizuje projekt? **
+
+Product Owner
+Analityk biznesowy
+Zespół developerski Fitatu
+UX/UI designer
+Partnerzy zewnętrzni (Glovo / Lisek / Uber Eats/ InPost Fresh – API)
+Dział Legal (umowy, RODO)
+
+------------------------------------------------------------------------------
+
+T – Transformation
+
+** Co się zmienia dzięki projektowi? **
+
+* Przed:
+Użytkownik musi ręcznie wyszukiwać produkty i "przenosić" listę zakupów do Glovo/Liska.
+* Po:
+Lista zakupów generowana w Fitatu → wysyłana automatycznie → produkty trafiają do koszyka aplikacji zakupowej → użytkownik tylko zatwierdza zamówienie.
+* Dodatkowo:
+Powiadomienia o konieczności zamówienia zakupów i przygotowania posiłku.
+
+------------------------------------------------------------------------------
+
+W – World View
+
+Rosnący rynek quick-commerce → integracje są naturalną ewolucją aplikacji żywieniowych.
+Duża wartość dla użytkowników: oszczędność czasu, wygoda, spójny proces.
+Fitatu może uzyskać przewagę konkurencyjną nad innymi aplikacjami skupiającymi się na monitorowaniu zdrowia i żywienia.
+Partnerzy zakupowi zyskują nowy kanał sprzedaży.
+
+------------------------------------------------------------------------------
+
+O – Owner
+
+Zarząd Fitatu / Product Owner.
+Partnerzy zakupowi (czyli zewnętrzni) - (API, zgoda na integrację).
+
+------------------------------------------------------------------------------
+
+E – Environmental constraints
+
+Brak udostępnionego API do koszyka w niektórych aplikacjach (Glovo – prawdopodobne).
+RODO – przekazywanie danych dot. diety może być newralgiczne.
+Dostępność produktów – różnice między listą Fitatu a ofertą partnerów.
+Zmiany w przepisach dotyczące e-commerce i dark store’ów.
+Ryzyko technologiczne (różna jakość API u partnerów).
+Ryzyko biznesowe: partner może odmówić integracji.
