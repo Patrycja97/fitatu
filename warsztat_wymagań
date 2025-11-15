@@ -1,0 +1,39 @@
+✅ Wymagania funkcjonalne
+
+1. Eksport listy zakupów do aplikacji partnerskiej
+System Fitatu musi umożliwiać użytkownikom eksport listy zakupów do wybranej aplikacji zakupowej (np. Lisek, InPost Fresh) oraz przekazanie co najmniej nazwy produktu, kategorii i ilości.
+
+2. Automatyczne powiadomienia o konieczności realizacji zakupów
+System Fitatu musi wysyłać użytkownikowi powiadomienie push, gdy na podstawie planu posiłków wykryje konieczność zamówienia produktów (np. dzień wcześniej o ustalonej godzinie).
+
+✅ Wymagania niefunkcjonalne
+
+1. Wydajność
+Czas przesłania listy zakupów z Fitatu do partnera zewnętrznego nie może przekroczyć 3 sekund przy standardowym obciążeniu.
+
+2. Użyteczność
+Proces wysyłania listy zakupów musi być intuicyjny, dostępny z maksymalnie np. 3-5 kliknięciami.
+
+✅ Wymagania systemowe
+
+1. Integracja przez API partnerów
+System Fitatu musi umożliwiać komunikację z systemami partnerskimi poprzez API udostępnione przez partnera.
+
+2. Obsługa błędów partnerów
+System Fitatu musi obsługiwać błędy zwracane przez API partnera, takie jak brak produktu w ofercie, i prezentować użytkownikowi komunikat o niezgodności listy.
+
+✅ Wymagania procesowe
+
+1. Iteracyjne planowanie pracy w Sprintach
+Projekt musi być realizowany w metodyce SCRUM, z iteracjami trwającymi 2 tygodnie. Każdy sprint musi kończyć się przeglądem działających funkcjonalności.
+
+2. Wczesne testy z partnerami zewnętrznymi
+Każdy partner zakupowy (np. Lisek, InPost Fresh) musi zostać zaangażowany najpóźniej na etapie pierwszego prototypu, aby potwierdzić zgodność integracji z ich API.
+
+✅ Wymagania tranzycyjne
+
+1. Wersja pilotażowa dla ograniczonej grupy użytkowników
+Przed pełnym wdrożeniem system Fitatu musi udostępnić nową funkcję w wersji beta ograniczonej grupie użytkowników (np. 500 osób) celem zebrania opinii i wykrycia potencjalnych błędów.
+
+2. Jednorazowe szkolenie zespołów Fitatu
+Zespół supportu, marketingu i QA musi przejść jednorazowe szkolenie z działania integracji oraz obsługi typowych błędów API partnerów.
