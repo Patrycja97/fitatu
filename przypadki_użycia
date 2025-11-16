@@ -1,0 +1,127 @@
+✅ DWA PRZYPADKI UŻYCIA (USE CASES)
+
+1️⃣ USE CASE — Wysłanie listy zakupów do aplikacji partnerskiej
+
+Aktorzy:
+- Użytkownik Fitatu
+- Aplikacja partnerska (Glovo / Lisek / InPost Fresh)
+- API partnera (system zewnętrzny)
+---------------------------------------------------------------------------------------
+Opis:
+Użytkownik wysyła przygotowaną w Fitatu listę zakupów do wybranej aplikacji zakupowej, aby automatycznie dodać produkty do koszyka.
+---------------------------------------------------------------------------------------
+Warunki wstępne:
+
+Użytkownik posiada wygenerowaną listę zakupów.
+Użytkownik ma zainstalowaną przynajmniej jedną aplikację partnerską.
+Połączenie z API partnera jest dostępne.
+---------------------------------------------------------------------------------------
+Scenariusz główny:
+
+Użytkownik otwiera „Listę zakupów” w Fitatu.
+Użytkownik wybiera opcję „Wyślij listę do aplikacji zakupowej”.
+System wyświetla listę dostępnych aplikacji (np. Lisek).
+Użytkownik wybiera aplikację.
+Fitatu wysyła listę zakupów do API partnera.
+Aplikacja partnerska potwierdza dodanie produktów do koszyka.
+Fitatu wyświetla komunikat: „Produkty zostały dodane do koszyka”.
+Aplikacja zakupowa otwiera się automatycznie z wypełnionym koszykiem.
+---------------------------------------------------------------------------------------
+Scenariusze alternatywne:
+
+1. Brak aplikacji partnerskiej
+– System wyświetla komunikat: „Brak kompatybilnych aplikacji zakupowych”.
+
+2. Brak produktu w sklepie partnera
+– API zwraca błąd → Fitatu proponuje zamiennik z bazy.
+
+3. Brak połączenia z API
+– System informuje użytkownika: „Nie udało się połączyć — spróbuj ponownie”.
+---------------------------------------------------------------------------------------
+Warunki końcowe:
+Produkty znajdują się w koszyku w aplikacji zakupowej i mogą zostać zamówione.
+---------------------------------------------------------------------------------------
+
+2️⃣ USE CASE — Powiadomienie o konieczności zamówienia zakupów
+
+Aktorzy:
+Użytkownik Fitatu
+System Fitatu (moduł powiadomień)
+---------------------------------------------------------------------------------------
+Opis:
+System przypomina użytkownikowi, że powinien zamówić produkty potrzebne do przygotowania posiłków zaplanowanych na następny dzień lub tydzień.
+---------------------------------------------------------------------------------------
+Warunki wstępne:
+
+Użytkownik ma zaplanowane posiłki.
+Włączone powiadomienia w aplikacji.
+Zidentyfikowane braki w produktach.
+---------------------------------------------------------------------------------------
+Scenariusz główny:
+
+System analizuje zaplanowane posiłki użytkownika.
+System wykrywa brakujące produkty w lodówce/półce (według listy zakupów).
+System wysyła powiadomienie push:
+„Zamów produkty na jutrzejsze posiłki — kliknij, aby dodać do koszyka”.
+Użytkownik klika powiadomienie.
+Fitatu otwiera listę zakupów z opcją wysłania jej do aplikacji partnerskiej.
+---------------------------------------------------------------------------------------
+Scenariusze alternatywne:
+
+A1. Powiadomienia są wyłączone → brak notyfikacji.
+
+A2. Użytkownik odrzuca powiadomienie → brak działania systemu.
+---------------------------------------------------------------------------------------
+Warunki końcowe:
+Użytkownik został poinformowany o konieczności zakupów i może wykonać zamówienie.
+---------------------------------------------------------------------------------------
+
+✅ KRYTERIA AKCEPTACJI
+
+1️⃣ Wymaganie: Wysyłanie listy zakupów
+---------------------------------------------------------------------------------------
+* Given *
+Użytkownik ma wygenerowaną listę zakupów i zainstalowaną aplikację partnerską.
+* When *
+Użytkownik wybiera opcję „Wyślij listę zakupów” i wybiera aplikację.
+* Then *
+System przesyła listę zakupów do API partnera we właściwym formacie.
+---------------------------------------------------------------------------------------
+* Given *
+Aplikacja partnerska potwierdziła przyjęcie produktów.
+* When *
+Fitatu otrzyma odpowiedź z API.
+* Then *
+System wyświetla komunikat: „Produkty zostały dodane do koszyka”.
+---------------------------------------------------------------------------------------
+* Given *
+Produkt jest niedostępny w sklepie partnera.
+* When *
+API zwróci błąd dotyczący produktu.
+* Then *
+Fitatu informuje użytkownika i wyświetla możliwe zamienniki.
+---------------------------------------------------------------------------------------
+
+2️⃣ Wymaganie: Powiadomienie o zamówieniu zakupów
+---------------------------------------------------------------------------------------
+* Given *
+Użytkownik posiada zaplanowane posiłki i brakujące produkty.
+* When *
+Zbliża się określona godzina wysyłki powiadomienia.
+* Then *
+System wysyła powiadomienie push o konieczności zamówienia zakupów.
+---------------------------------------------------------------------------------------
+* Given *
+Użytkownik kliknie powiadomienie.
+* When *
+Aplikacja otworzy ekran.
+* Then *
+Fitatu przenosi użytkownika do listy zakupów.
+---------------------------------------------------------------------------------------
+* Given *
+Użytkownik ma wyłączone powiadomienia.
+* When *
+System próbuje wysłać notyfikację.
+* Then *
+Powiadomienie nie jest wyświetlane.
+---------------------------------------------------------------------------------------
