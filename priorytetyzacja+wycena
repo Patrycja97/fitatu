@@ -1,0 +1,17 @@
+⭐ Priorytetyzacja wymagań
+
+Wybór metody priorytetyzacji:
+W projekcie integracji Fitatu z aplikacjami zakupowymi występują wymagania o różnej wartości biznesowej oraz różnym poziomie trudności technicznej.
+Metoda Action Priority Matrix (APM) umożliwi ocenę każdego wymagania w dwóch wymiarach:
+* Wartość biznesowa/wpływ (impact) – w jakim stopniu realizacja wymagania poprawia doświadczenie użytkownika, wspiera cel projektu i zwiększa wartość produktu.
+* Wysiłek/łatwości wdrożenia (effort) – jak dużo pracy, zasobów i ryzyka technicznego wymaga realizacja.
+Pozwali to jasno rozdzielić szybkie zwycięstwa (Quick Wins) od złożonych projektów (Major Projects) oraz ustalić sensowną kolejność realizacji.
+
+📌 Wymagania funkcjonalne
+
+| Wymaganie                                 | Wpływ         | Wysiłek | Kategoria     |
+| ----------------------------------------- | ------------- | ------- | ------------- |
+| F1. Eksport listy zakupów do aplikacji    | Wysoki        | Wysoki  | Major Project |
+| F2. Automatyczne powiadomienia o zakupach | Średni/Wysoki | Średni  | Quick Win     |
+
+📌 Wymagania niefunkcjonalne
