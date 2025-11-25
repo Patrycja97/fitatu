@@ -80,6 +80,7 @@ Użytkownik został poinformowany o konieczności zakupów i może wykonać zam�
 
 1️⃣ Wymaganie: Wysyłanie listy zakupów
 ---------------------------------------------------------------------------------------
+1. Poprawne przesłanie listy do API partnera
 * Given *
 Użytkownik ma wygenerowaną listę zakupów i zainstalowaną aplikację partnerską.
 * When *
@@ -87,6 +88,7 @@ Użytkownik wybiera opcję „Wyślij listę zakupów” i wybiera aplikację.
 * Then *
 System przesyła listę zakupów do API partnera we właściwym formacie.
 ---------------------------------------------------------------------------------------
+2. Potwierdzenie dodania produktów
 * Given *
 Aplikacja partnerska potwierdziła przyjęcie produktów.
 * When *
@@ -94,6 +96,7 @@ Fitatu otrzyma odpowiedź z API.
 * Then *
 System wyświetla komunikat: „Produkty zostały dodane do koszyka”.
 ---------------------------------------------------------------------------------------
+3. Brak produktu w sklepie partnera
 * Given *
 Produkt jest niedostępny w sklepie partnera.
 * When *
@@ -101,9 +104,34 @@ API zwróci błąd dotyczący produktu.
 * Then *
 Fitatu informuje użytkownika i wyświetla możliwe zamienniki.
 ---------------------------------------------------------------------------------------
+4. Brak internetu
+* Given *
+Użytkownik wybiera opcję wysłania listy.
+* When *
+Urządzenie jest offline lub połączenie zostaje utracone.
+* Then *
+Fitatu wyświetla komunikat „Brak połączenia z internetem, spróbuj ponownie”.
+---------------------------------------------------------------------------------------
+5. Brak kompatybilnej aplikacji
+* Given *
+Użytkownik próbuje wysłać listę.
+* When *
+Na urządzeniu nie ma zainstalowanej żadnej aplikacji partnerskiej.
+* Then *
+Fitatu wyświetla komunikat „Brak kompatybilnych aplikacji zakupowych”.
+---------------------------------------------------------------------------------------
+6. Błąd po stronie aplikacji partnera
+* Given *
+System próbuje wysłać listę do API.
+* When *
+API nie odpowiada, przekracza czas odpowiedzi lub zwraca błąd serwera.
+* Then *
+Fitatu wyświetla komunikat „Usługa partnera jest chwilowo niedostępna”.
+---------------------------------------------------------------------------------------
 
 2️⃣ Wymaganie: Powiadomienie o zamówieniu zakupów
 ---------------------------------------------------------------------------------------
+1. Wysłanie powiadomienia dla zaplanowanych posiłków
 * Given *
 Użytkownik posiada zaplanowane posiłki i brakujące produkty.
 * When *
@@ -111,6 +139,7 @@ Zbliża się określona godzina wysyłki powiadomienia.
 * Then *
 System wysyła powiadomienie push o konieczności zamówienia zakupów.
 ---------------------------------------------------------------------------------------
+2. Kliknięcie przenosi do listy zakupów
 * Given *
 Użytkownik kliknie powiadomienie.
 * When *
@@ -118,10 +147,35 @@ Aplikacja otworzy ekran.
 * Then *
 Fitatu przenosi użytkownika do listy zakupów.
 ---------------------------------------------------------------------------------------
+3. Wyłączone powiadomienia
 * Given *
-Użytkownik ma wyłączone powiadomienia.
+Użytkownik ma wyłączone powiadomienia (np. z powodu włączonego trybu "Nie przeszkadzać").
 * When *
 System próbuje wysłać notyfikację.
 * Then *
 Powiadomienie nie jest wyświetlane.
+---------------------------------------------------------------------------------------
+4. Brak uprawnień do wysyłania powiadomień
+* Given *
+Użytkownik wcześniej zablokował uprawnienia dla powiadomień od Fitatu.
+* When *
+System próbuje wysłać powiadomienie.
+* Then *
+Powiadomienie nie jest dostarczane.
+---------------------------------------------------------------------------------------
+5. Brak brakujących produktów
+* Given *
+Użytkownik zaplanował posiłki.
+* When *
+Użytkownik ma wszystkie potrzebne produkty (lista zakupów jest pusta).
+* Then *
+System nie wysyła powiadomienia o zakupach.
+---------------------------------------------------------------------------------------
+6. Brak zaplanowanych posiłków
+* Given *
+Użytkownik nie zaplanował żadnych posiłków.
+* When *
+Nadchodzi czas wysyłki powiadomienia.
+* Then *
+System nie generuje żadnej notyfikacji.
 ---------------------------------------------------------------------------------------
