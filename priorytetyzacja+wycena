@@ -1,25 +1,26 @@
 ⭐ Priorytetyzacja wymagań
 
-* Wybór metody priorytetyzacji: Action Priority Matrix
 W projekcie integracji Fitatu z aplikacjami zakupowymi występują wymagania o różnej wartości biznesowej oraz różnym poziomie trudności technicznej.
-Metoda Action Priority Matrix umożliwi mi ocenę każdego wymagania w dwóch wymiarach:
-- Wartość biznesowa/wpływ (impact) – w jakim stopniu realizacja wymagania poprawia doświadczenie użytkownika, wspiera cel projektu i zwiększa wartość produktu.
-- Wysiłek/łatwości wdrożenia (effort) – jak dużo pracy, zasobów i ryzyka technicznego wymaga realizacja.
-Pozwoli mi to jasno rozdzielić szybkie zwycięstwa (Quick Wins) od złożonych projektów (Major Projects) oraz ustalić sensowną kolejność realizacji.
+
+* Wybór metody priorytetyzacji: Action Priority Matrix
+Metoda ta umożliwi mi ocenę każdego wymagania w dwóch wymiarach:
+- Wartość biznesowa/wpływ (impact) – w jakim stopniu realizacja danego wymagania poprawia doświadczenie użytkownika, wspiera cel projektu i zwiększa wartość produktu.
+- Wysiłek/łatwość wdrożenia (effort) – jak dużo pracy, zasobów i ryzyka technicznego wymaga realizacja.
+Pozwoli mi to jasno rozdzielić szybkie zwycięstwa (Quick Wins) od złożonych projektów (Major Projects).
 
 📌 Wymagania funkcjonalne
 
-| Wymaganie                                | Wpływ  | Wysiłek | Kategoria     |
-| ---------------------------------------- | ------ | ------- | ------------- |
-| 1. Eksport listy zakupów do partnera     | Wysoki | Wysoki  | Major Project |
-| 2. Automatyczne powiadomienia o zakupach | Średni | Średni  | Quick Win     |
+| Wymaganie                                | Wpływ         | Wysiłek       | Kategoria     |
+| ---------------------------------------- | ------------- | ------------- | ------------- |
+| 1. Eksport listy zakupów do partnera     | Wysoki        | Wysoki        | Major Project |
+| 2. Automatyczne powiadomienia o zakupach | Średni        | Średni        | Quick Win     |
 
 📌 Wymagania niefunkcjonalne
 
-| Wymaganie                                | Wpływ  | Wysiłek | Kategoria     |
-| ---------------------------------------- | ------ | ------- | ------------- |
-| 1. Czas przesyłania < 3s                 | Średni | Średni  | Fill-in       |
-| 2. Użyteczność (3–5 kliknięć)            | Średni | Niski   | Quick win     |
+| Wymaganie                                | Wpływ         | Wysiłek       | Kategoria     |
+| ---------------------------------------- | ------------- | ------------- | ------------- |
+| 1. Czas przesyłania < 3s                 | Średni        | Średni        | Fill-In       |
+| 2. Użyteczność (3–5 kliknięć)            | Średni        | Niski         | Quick win     |
 
 📌 Wymagania systemowe
 
@@ -30,17 +31,17 @@ Pozwoli mi to jasno rozdzielić szybkie zwycięstwa (Quick Wins) od złożonych 
 
 📌 Wymagania procesowe
 
-| Wymaganie                                | Wpływ  | Wysiłek      | Kategoria |
-| ---------------------------------------- | ------ | ------------ | --------- |
-| 1. Sprinty 2-tygodniowe                  | Niski  | Niski        | Fill-in   |
-| 2. Wczesne testy z partnerami            | Wysoki | Niski/Średni | Quick Win |
+| Wymaganie                                | Wpływ         | Wysiłek       | Kategoria     |
+| ---------------------------------------- | ------------- | ------------- | ------------- |
+| 1. Sprinty 2-tygodniowe                  | Niski         | Niski         | Fill-In       |
+| 2. Wczesne testy z partnerami            | Wysoki        | Niski         | Quick Win     |
 
 📌 Wymagania tranzycyjne
 
-| Wymaganie                                | Wpływ  | Wysiłek | Kategoria |
-| ---------------------------------------- | ------ | ------- | --------- |
-| 1. Wersja beta dla 500 osób              | Średni | Średni  | Fill-in   |
-| 2. Szkolenie zespołów Fitatu             | Średni | Niski   | Quick Win |
+| Wymaganie                                | Wpływ         | Wysiłek       | Kategoria     |
+| ---------------------------------------- | ------------- | ------------- | ------------- |
+| 1. Wersja beta dla 500 osób              | Średni        | Średni        | Fill-In       |
+| 2. Szkolenie zespołów Fitatu             | Średni        | Niski         | Quick Win     |
 
 
 ⭐ Wycena wymagań
@@ -52,7 +53,7 @@ Pomoże zespołowi w planowaniu i dostosowywaniu się do zmian w trakcie projekt
 Skala - ciąg Fibonacciego (1, 2, 3, 5, 8, 13, 21)
 
 Punkt referencyjny:
-małe zadanie = 2 SP
+proste zadanie = 2 SP
 średnie = 5 SP
 trudne = 8 SP
 bardzo trudne = 13 SP wzwyż
@@ -80,14 +81,14 @@ bardzo trudne = 13 SP wzwyż
 
 📌 Wymagania procesowe
 
-| Wymaganie                                | SP   | Uzasadnienie              |
-| ---------------------------------------- | ---- | ------------------------- |
-| 1. Sprinty 2-tygodniowe                  | 1 SP | Formalność organizacyjna  |
-| 2. Wczesne testy z partnerami            | 3 SP | Spotkania + testy sandbox |
+| Wymaganie                                | Story Points | Uzasadnienie                                   |
+| ---------------------------------------- | ------------ | ---------------------------------------------- |
+| 1. Sprinty 2-tygodniowe                  | 1 SP         | Formalność organizacyjna                       |
+| 2. Wczesne testy z partnerami            | 3 SP         | Spotkania + testy sandbox                      |
 
 📌 Wymagania tranzycyjne
 
-| Wymaganie                                | SP   | Uzasadnienie                    |
-| ---------------------------------------- | ---- | ------------------------------- |
-| 1. Wersja beta dla 500 osób              | 5 SP | Feature flag + analityka        |
-| 2. Szkolenie zespołów Fitatu             | 2 SP | Przygotowanie + przeprowadzenie |
+| Wymaganie                                | Story Points | Uzasadnienie                                   |
+| ---------------------------------------- | ------------ | ---------------------------------------------- |
+| 1. Wersja beta dla 500 osób              | 5 SP         | Feature flag + analityka                       |
+| 2. Szkolenie zespołów Fitatu             | 2 SP         | Przygotowanie + przeprowadzenie                |
